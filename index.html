@@ -70,6 +70,10 @@ nav a {
 section {
     padding: 60px 50px;
 }
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #38bdf8;
+}    
 
 /* GRID */
 .grid {
@@ -115,7 +119,9 @@ footer {
     <h1>Hi, I'm <span>Niteendra Chauhan</span></h1>
     <p class="typing" id="typing"></p>
 
-    <a href="#" class="btn">Download Resume</a>
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+    <a href="https://github.com/yourusername">GitHub</a>
+    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
 </div>
 
 <section id="about">
@@ -168,6 +174,23 @@ function type() {
 }
 
 type();
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+});
+
+document.querySelectorAll("section").forEach(sec => {
+  sec.style.opacity = 0;
+  sec.style.transform = "translateY(50px)";
+  sec.style.transition = "all 0.8s ease";
+  observer.observe(sec);
+});
+
 </script>
 
 </body>
