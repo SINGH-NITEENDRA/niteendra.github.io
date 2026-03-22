@@ -5,77 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Niteendra Chauhan | Cyber Portfolio</title>
 
-<!-- PARTICLES -->
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+body{background:#020617;color:white;overflow-x:hidden;}
 
-body{
-background:#020617;
-color:white;
-overflow-x:hidden;
-}
+#particles{position:fixed;width:100%;height:100%;z-index:-1;}
 
-/* PARTICLE BG */
-#particles{
-position:fixed;
-width:100%;
-height:100%;
-z-index:-1;
-}
-
-/* NAV */
 nav{
-display:flex;
-justify-content:space-between;
-padding:20px 50px;
-position:sticky;
-top:0;
-background:rgba(0,0,0,0.7);
-backdrop-filter:blur(10px);
+display:flex;justify-content:space-between;
+padding:20px 50px;position:sticky;top:0;
+background:rgba(0,0,0,0.7);backdrop-filter:blur(10px);
 }
 nav h1{color:#00ffcc;}
 nav a{color:white;margin-left:20px;text-decoration:none;}
 
-/* HERO */
-.hero{
-text-align:center;
-padding:120px 20px;
-}
-.hero h1{
-font-size:45px;
-text-shadow:0 0 10px #00ffcc;
-}
+.hero{text-align:center;padding:120px 20px;}
+.hero h1{font-size:45px;text-shadow:0 0 10px #00ffcc;}
 .typing{color:#94a3b8;margin-top:10px;}
 
 .btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#00ffcc;
-color:black;
-border-radius:6px;
-text-decoration:none;
+display:inline-block;margin-top:20px;padding:12px 25px;
+background:#00ffcc;color:black;border-radius:6px;text-decoration:none;
 }
 
-/* SECTION */
-section{
-padding:80px 50px;
-}
+section{padding:80px 50px;}
+h2{color:#00ffcc;margin-bottom:20px;}
 
-/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-/* CARD */
 .card{
 background:rgba(255,255,255,0.05);
-padding:20px;
-border-radius:12px;
+padding:20px;border-radius:12px;
 backdrop-filter:blur(10px);
 transition:0.3s;
 }
@@ -84,15 +50,10 @@ transform:translateY(-10px);
 box-shadow:0 0 20px #00ffcc;
 }
 
-/* FOOTER */
-footer{
-text-align:center;
-padding:20px;
-color:#94a3b8;
-}
+footer{text-align:center;padding:20px;color:#94a3b8;}
 </style>
-
 </head>
+
 <body>
 
 <div id="particles"></div>
@@ -103,6 +64,7 @@ color:#94a3b8;
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </div>
 </nav>
 
@@ -113,38 +75,61 @@ color:#94a3b8;
 <a href="Niteendra_Chauhan_Cyber_Cloud_Fresher_Resume_Proper.pdf" class="btn" download>Download Resume</a>
 
 <br><br>
-<a href="https://github.com/SINGH-NITEENDRA">GitHub</a> |
-<a href="https://www.linkedin.com/in/niteendra-singh">LinkedIn</a>
+
 </div>
 
 <section id="about">
 <h2>About Me</h2>
-<p>Cybersecurity enthusiast building secure tools using Python & Linux.</p>
+<p>Cybersecurity enthusiast building secure tools using Python & Linux. Passionate about ethical hacking and cloud security.</p>
 </section>
 
 <section id="skills">
 <h2>Skills</h2>
 <div class="grid">
-<div class="card">Python, JavaScript</div>
-<div class="card">Linux (Kali Linux)</div>
-<div class="card">Cybersecurity, Encryption</div>
-<div class="card">AWS Cloud</div>
+<div class="card">Python, Java, JavaScript</div>
+<div class="card">Linux (Kali Linux, Ubuntu)</div>
+<div class="card">Cybersecurity, Encryption, Networking</div>
+<div class="card">AWS, Cloud Computing</div>
 </div>
 </section>
 
 <section id="projects">
 <h2>Projects</h2>
 <div class="grid">
+
 <div class="card">
-<h3>🔐 Steganography Tool</h3>
-<p>Hide files inside images using encryption.</p>
-<a href="https://github.com/yourusername">View</a>
+<h3>🔐 Steganography Pro Tool</h3>
+<p>Hide files inside images using LSB technique with AES encryption.</p>
+<a href="https://github.com/SINGH-NITEENDRA/-Steganography-Pro-Tool">View Project</a>
 </div>
+
+<div class="card">
+<h3>🛡 Digital Evidence Management System</h3>
+<p>Secure system for storing and managing digital evidence with access control.</p>
+</div>
+
+<div class="card">
+<h3>⏳ Secure Time-Bound EXE</h3>
+<p>Executable file with time-based access control and content protection.</p>
+</div>
+
+<div class="card">
+<h3>🌐 Full Stack Website</h3>
+<p>Multi-page responsive website with modern UI and navigation.</p>
+</div>
+
 </div>
 </section>
 
+<section id="contact">
+<h2>Contact Me</h2>
+<p>📧 Email: singhniteendra@gmail.com</p>
+<p>🔗 LinkedIn: <a href="https://github.com/SINGH-NITEENDRA">GitHub</a></p>
+<p>💻 GitHub: <a href="https://www.linkedin.com/in/niteendra-singh">LinkedIn</a></p>
+</section>
+
 <footer>
-© 2026 Niteendra Chauhan
+© 2026 Niteendra Chauhan | All Rights Reserved
 </footer>
 
 <script>
