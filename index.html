@@ -134,7 +134,7 @@ footer{text-align:center;padding:20px;color:#94a3b8;}
 
 <script>
 // typing
-const words=["Cybersecurity Enthusiast","Python Developer","Linux Hacker"];
+const words=["Cybersecurity Enthusiast","Python Developer","Linux Hacker","Cloud Specialist"];
 let i=0,j=0,cur="",del=false;
 
 function type(){
@@ -147,7 +147,7 @@ else{
 del=!del;
 if(!del) i=(i+1)%words.length;
 }
-setTimeout(type,del?50:100);
+setTimeout(type,del?100:100);
 }
 type();
 
@@ -170,10 +170,10 @@ obs.observe(s);
 // particles
 tsParticles.load("particles",{
 particles:{
-number:{value:60},
+number:{value:50},
 color:{value:"#00ffcc"},
 links:{enable:true,color:"#00ffcc"},
-move:{enable:true,speed:2}
+move:{enable:true,speed:1}
 }
 });
 </script>
